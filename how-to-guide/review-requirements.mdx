@@ -1,0 +1,60 @@
+---
+title: "Review extracted requirements"
+description: "Verify the structured requirements extracted from the RFP before running compliance."
+---
+
+After creating the project, the system automatically processes the RFP and extracts structured requirements. Before running compliance, review the extracted structure to ensure it reflects the original document correctly.
+
+## Understand the structured view
+
+The RFP Viewer displays extracted requirements in a split layout:
+
+- **Left panel** — extracted requirements organized by parts, sections, subsections, and clauses
+- **Right panel** — the original PDF for side-by-side verification
+
+<Frame>
+  <img src="/images/how-to-guide/requirements-split-view.png" alt="Split view showing extracted requirements on the left and the original RFP PDF on the right" />
+</Frame>
+
+The hierarchy mirrors the original RFP numbering.
+
+You can switch between three view modes:
+
+<Frame>
+  <img src="/images/how-to-guide/view-toggle.png" alt="View toggle with Requirements, PDF, and Split options" />
+</Frame>
+
+- **Requirements** — structured list only
+- **PDF** — original document only
+- **Split** — both side by side
+
+## Verify extracted requirements
+
+Confirm that:
+
+- All required sections are present
+- Numbering aligns with the original document
+
+The system supports:
+
+- Native text-based PDFs
+- Scanned PDFs (OCR processing)
+- Structured and semi-structured tables
+- Multi-level numbering formats
+
+<Note>
+The extraction engine has been extensively tested across a wide range of real-world RFP documents. However, speXcompl.ai is in Early Access — occasional extraction inconsistencies may occur due to the diversity of formatting styles.
+
+If you notice missing sections, misaligned numbering, or structural inaccuracies, you may proceed with compliance while keeping those observations in mind. Contact support if needed — project refunds are available where appropriate.
+</Note>
+
+## Understand requirement status
+
+At this stage, all items appear as **Not Reviewed**. The compliance summary at the top shows:
+
+- Total extracted items
+- Review status breakdown
+
+<Warning>
+Do not run compliance yet if Scope is not properly configured. Proceed to [Configure scope](/how-to-guide/configure-scope) first.
+</Warning>

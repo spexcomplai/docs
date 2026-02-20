@@ -1,0 +1,60 @@
+---
+title: "Configure scope"
+description: "Define and verify the SKUs (product models) that will be evaluated against RFP requirements."
+---
+
+Before running compliance evaluation, you must confirm that the correct SKUs are defined in Scope.
+
+A **SKU** represents a specific product model you intend to propose. Each SKU corresponds to a single product variant that will be evaluated against the RFP requirements. The Scope defines which SKUs are included in the compliance check.
+
+## Review scoped SKUs
+
+If a Bill of Materials was uploaded or pasted during project creation, the system attempts to detect and match SKUs automatically.
+
+<Frame>
+  <img src="/images/how-to-guide/scoped-skus-list.png" alt="Scoped SKUs list showing 5 matched SKUs with match confidence indicators" />
+</Frame>
+
+At the top of the Scope page, you can see:
+
+- **Total matched SKUs**
+- **Number of uploaded datasheets**
+
+Under **Scoped SKUs**, review the list and confirm:
+
+- All intended SKUs are listed
+- Each SKU is linked to the correct datasheet
+- No required SKUs are missing
+
+## Add or correct SKUs manually
+
+If a SKU is missing or incorrectly matched, you can define it manually.
+
+<Frame>
+  <img src="/images/how-to-guide/add-sku-dialog.png" alt="Add SKU to Scope dialog with fields for BOM SKU, Datasheet SKU, and Datasheet selection" />
+</Frame>
+
+<Steps>
+  <Step title="Click Add SKU" />
+  <Step title="Select the appropriate datasheet" />
+  <Step title="Enter the exact model number" />
+  <Step title="Confirm the addition" />
+</Steps>
+
+If necessary, you may remove incorrect SKUs or clear the list and redefine them. Manual configuration ensures the correct product variant is evaluated during compliance.
+
+<Warning>
+Do not run compliance evaluation until:
+- All intended SKUs are defined
+- Each SKU is linked to the correct datasheet
+
+Compliance results are calculated only against the SKUs currently in Scope.
+</Warning>
+
+<Tip>
+Think of Scope as defining **what you are proposing**.
+
+- The **RFP** defines what is required.
+- The **SKUs** define what you are offering.
+- **Compliance** compares the two.
+</Tip>
